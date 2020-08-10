@@ -1,0 +1,230 @@
+body{
+    margin:0;
+}
+#logo{
+    width:170px;
+    height: 70px;
+    position:absolute;
+    top:1px;
+    margin-left:3%;
+}
+header{
+    background-color:black;
+    color:white;
+    height:75px;
+    width:100%;
+    position:fixed;
+    z-index: 10;
+}
+#menu{
+    float:right;
+    margin-right:5%;
+    list-style:none;
+}
+#check, .barra,#logot{
+    display:none;
+}
+li{
+    float:left;
+    padding: 10;
+    font-size:25;
+}
+li a{
+    text-decoration: none;
+    color:white;
+}
+#link1{
+    text-decoration: none;
+    color:white;
+}
+li:hover{
+    background-color:#fa7f;
+}
+#seçao1{
+    background: url("imagens/capadefundo.jpeg")no-repeat;
+    text-align: center;
+    padding: 10%;
+    color: snow;
+    background-size:cover;
+}
+#t1{
+    font-size: 55px;
+    text-shadow:black 5px 2px;
+    box-sizing:border-box;
+
+}
+#p1{
+    font-size:40px;
+    text-shadow:black 2px 2px;
+    padding:5%
+}
+#s2{
+    background-color:#fa7f;
+    padding-top:3%;
+    width:94%;
+}
+#t2{
+    font-size: 35px;
+    text-align: center;
+    }
+#p2{
+    font-size:25px;
+    padding: 3px;
+    color:rgb(10, 10, 10);
+}
+.flutuar{
+    float: left;
+    padding:1% 3%;
+    width:40%;
+}
+.p3{
+    font-size:23px;
+    margin:2px;
+}
+#s3{
+    background-color: whitesmoke;
+    width:94%;
+    margin:0;
+}
+#t3{
+    font-size:30px;
+    text-align: center;
+
+}    
+#imagem1{
+    padding: 10% 0 5% 0;
+    width:94%;
+}
+.icones{
+    width:41%
+}
+.icones:hover{
+    border-radius:20px;
+    border: 2px solid white;
+    background-color:white;
+}
+.justificado{
+    text-align: justify;
+}
+.colunaquatro{
+    float:left;
+    padding:4.5%;
+    width:16%;
+    font-size:20px;
+    text-align:center;
+}
+#t4{
+    text-align:center;
+    padding: 2%;
+    margin-top: 10px;
+    font-size: 40px;
+}
+#s4{
+    background-color:#fa7f;
+    padding-top:5px;
+    width:94%;
+
+}
+#s5{
+    background-color: whitesmoke;
+    padding-top:0px;
+   width:94%;
+}
+p{
+    text-align:center;  
+    padding-top:5px;
+    font-size:25px;
+}
+h4{
+    text-align:center;
+    font-size:30px
+}
+h5{
+    text-align:center;
+    padding-top:5px;
+    font-size:30px;
+}
+h6{
+    text-align:center;
+    font-size:30px
+}
+#imagem3{
+    width: 100%;
+    padding:20% 7% 7% 7%;
+    box-sizing:border-box;
+}
+#s6{
+    background-color:#fa7f;
+    padding-top:5px;
+    width:94%;
+}
+#imagem4{
+    width:50%;
+    padding:5%;
+    padding-left:20%;
+}
+footer{
+    background-color:black;
+    color:white;
+    float:left;
+    width:94%;
+
+}
+.ff {
+    float: left;
+    padding:2% 3%;
+    width:94%;
+}
+#insta{
+    padding-left:47.5%;
+    width:5%;
+}
+@media screen and (max-width:768px){
+    .flutuar,.colunaquatro, .ff ,.seçao1, #s2,#s3,#s4,#s5,#s6{
+        display:block;
+        width:100%;
+        box-sizing:border-box;
+        float:none;
+    }
+    #menu {
+        visibility: hidden;
+    }
+    .barra{
+        visibility: visible;
+        background-color: rgb(192, 117, 104);
+        height: 100vh;
+        width: 300px;
+        position: absolute;
+        left: -300px; 
+        transition: all .3s linear;
+        display:block;
+               
+        z-index: 11;
+    }
+    #menu2{
+        width: 100%;
+        position: absolute;
+        
+    }
+    #menu2 a{
+    
+        text-decoration: none;
+    }
+    #menu2 a div{
+        background-color: rgba(255, 99, 71, 0.233);
+        padding: 20px;
+        transition: all .2s linear;
+        color: wheat;
+        border-bottom: 2px solid wheat;
+    }
+    #menu2 a div:hover{
+        background-color: tomato;
+    }
+    #check:checked ~ .barra{
+       transform: translateX(300px);
+   }
+   #logot{
+       display:block;
+   }
+}
+
